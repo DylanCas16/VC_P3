@@ -21,9 +21,11 @@ Por último, la función "elegir_punto()" abre una ventana con la imagen para qu
 
 Ahora se procede con las pruebas tanto de la imagen ideal como la de webcam. En la primera se utiliza la última función mencionada para obtener la posición donde se ubique el círculo de la moneda de 1€, posteriormente se obtiene su diámetro y se aplica una función para obtener la escala que aplicar en el resto de diámetros del diccionario con el propósito de localizar las demás monedas y sus valores, siendo estas las que coincidan con su diámetro (con ayuda de la función "es_moneda()") y su "material". El resultado final se puede apreciar en la siguiente iamgen:
 
-![Resultado prueba de monedas con imagen ideal](resultados/resultados_ideal_tarea1.png.png)
+![Resultado prueba de monedas con imagen ideal](resultados/resultados_ideal_tarea1.png)
 
 Por otro lado, la prueba de la cámara web se basa de la misma idea, con la diferencia de que se puede recalcular la escala en cualquier momento al hacer clic en la moneda de 1€. Cuando el usuario hace hace clic en la ubicación de la moneda, este calcula el diametro del círculo que lo contiene en un total de 15 fotogramas, de los cuales se calcula la mediana para encontrar el valor más estable y así evitar lo máximo posible un error de cálculo. Posteriormente, con esa escala se calculan las demás monedas y se van contando y mostrando su valor en tiempo real, también se hace uso de la función "es_moneda()" para reducir el número de círculos que clasificar. El siguiente GIF muestra su ejecución:
+
+![Resultado prueba de monedas con cámara web](resultados/resultados_webcam_tarea1.gif)
 
 
 ## Tarea 2
